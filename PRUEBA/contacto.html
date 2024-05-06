@@ -61,33 +61,40 @@
                 <div class="fondoform">
                     <div class="ordenarformularios">
                         <form action="">
-                            <div>
+                        <h1>Formulario de contacto</h1>
+                        <div class="form-row">
+                            <div class="col">
                                 <label for="nombre">Nombre</label>
-                                <input type="text" id = 'nombre'>
+                                <input type="text" class="form-control" id = 'nombre'>
                             </div>
-                            <div>
+                            <div class="col">
                                 <label for="celular">Celular</label>
-                                <input type="text" id = 'celular'>
+                                <input type="text" class="form-control" id = 'celular'>
                             </div>
-                            <div>
+                        </div>
+                        <div class="form-row">     
+                            <div class="col">
                                 <label for="mail">Mail</label>
-                                <input type="text" id = 'mail'>
+                                <input type="text" class="form-control" id = 'mail'>
                             </div>
-                            <div>
+                            <div class="col">
                                 <label for="pais">País</label>
-                                <input type="text" id = 'pais'>
+                                <input type="text" class="form-control" id = 'pais'>
                             </div>
-                            <div>
+                            <div class="col">
                                 <label for="ciudad">Ciudad</label>
-                                <input type="text" id = 'ciudad'>
+                                <input type="text" class="form-control" id = 'ciudad'>
                             </div>
+                        </div> 
                             <div class="field">
-                                <label for="mensaje">tus dudas aqui!</label>
-                                <textarea name="message" id="mensaje" rows="3"></textarea>
+                                <h3 for="mensaje">tus dudas aqui!</h3>
+                                <textarea class="col-md-8" name="message" id="mensaje" rows="4" ></textarea>
                             </div>
                             <input type="button" onclick='enviarFormulario()' value='Enviar'>
+                            <div id ='error'></div> 
+                        </div>
                         </form>
-                        <div id ='error'></div> 
+                        
                     </div>
                 </div>
         </div>

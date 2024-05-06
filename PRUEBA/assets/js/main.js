@@ -31,6 +31,8 @@ function enviarFormulario(){
         mensajesError.push('Ingresa un mensaje');
     }
     error.innerHTML = mensajesError.join(', ');
+        
+    
 
     return false;
 }
